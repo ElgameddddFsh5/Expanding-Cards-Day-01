@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+main .container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 100px;
+}
+main .container .card {
+  width: 150px;
+  height: 700px;
+  transition: 0.7s ease-in-out;
+  margin-left: 20px;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+}
+
+main .container .card h3 {
+  position: absolute;
+  bottom: 30px;
+  font-size: 25px;
+  transform: translateX(20px);
+  color: #fff;
+  opacity: 0;
+}
+.onclick h3 {
+  opacity: 1 !important;
+  transition: 0.7s ease-in-out;
+}
+.onclick {
+  width: 95% !important;
+}
